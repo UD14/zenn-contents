@@ -29,6 +29,8 @@ https://zenn.dev/udm/articles/pdm-ai-deploy-challenge
 
 イベントごとの精算記録から、請求メッセージの自動生成までが完結するシンプルな割り勘アプリ。
 
+![](/images/warikan.png)
+
 | 項目 | 内容 |
 | :--- | :--- |
 | **思想** | 個人的に毎月5~10回ほどの飲み会で幹事をしており、管理が非常に煩雑。取りこぼしも多いため、**自身の痛み**から開発。（全部奢れるくらいの大きな男になった暁には、このアプリを削除するのが目標です） |
@@ -40,6 +42,8 @@ https://zenn.dev/udm/articles/pdm-ai-deploy-challenge
 
 「失敗も資産にする」をコンセプトにした、継続のためのトラッキングアプリ。
 
+![](/images/habit.png)
+
 | 項目 | 内容 |
 | :--- | :--- |
 | **思想** | 禁酒アプリが続かない原体験から打破。1日の失敗で全てが台無しになる絶望感をなくし、負の習慣を断つだけでなく、筋トレなどの正の習慣も同時に積み上げる思想。 |
@@ -50,6 +54,8 @@ https://zenn.dev/udm/articles/pdm-ai-deploy-challenge
 ### 3. [スパチャ体感シミュレーション (Superchat Demo)](https://superchat-demo-rouge.vercel.app)
 
 投げ銭のTierに応じて視覚・感情的なフィードバックを返すUIデモ。
+
+![](/images/superchat.png)
 
 | 項目 | 内容 |
 | :--- | :--- |
@@ -68,6 +74,8 @@ https://zenn.dev/udm/articles/pdm-ai-deploy-challenge
 
 過去のチャートを見て「売買」を判断する、トレードの「型」を身につけるためのアプリ。
 
+![](/images/crypto.png)
+
 | 項目 | 内容 |
 | :--- | :--- |
 | **思想** | 仮想通貨初心者として「チャートを見て判断する練習」がしたいが、既存アプリになかったため自作。 |
@@ -79,6 +87,8 @@ https://zenn.dev/udm/articles/pdm-ai-deploy-challenge
 
 男性特化のメイクアッププレビュー。
 
+![](/images/makeup.png)
+
 | 項目 | 内容 |
 | :--- | :--- |
 | **思想** | 30歳を超えて「小綺麗なおじさんでありたい」という願いと、最近レインボー池田さんの動画などを見て興味を持ったジャンル。女性向けが大半な中で、**「男性特化」**でやってみるマインド。 |
@@ -89,6 +99,8 @@ https://zenn.dev/udm/articles/pdm-ai-deploy-challenge
 ### 6. [First Impression Star (第一印象スター)](https://first-impression-star.vercel.app)
 
 AIによる雰囲気・第一印象の評価アプリ。
+
+![](/images/impression.png)
 
 | 項目 | 内容 |
 | :--- | :--- |
