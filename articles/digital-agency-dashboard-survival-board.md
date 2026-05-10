@@ -20,7 +20,7 @@ published: true
 
 今日完成したのがこちらです👇
 
-![SURVIVAL BOARD PRO - 全体像](/images/survival-board-fullpage.png)
+![SURVIVAL BOARD PRO - メイン画面](/images/survival-board-main.png)
 *April 2026の実データで、下位3アプリ（kake-kiero, vision3-web, janken-poker）が赤でハイライトされている。*
 
 
