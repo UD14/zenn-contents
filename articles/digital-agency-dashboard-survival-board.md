@@ -26,7 +26,7 @@ published: true
 
 ## デジタル庁の「ダッシュボードデザインの実践ガイドブック」
 
-デジタル庁は、行政や民間を問わず利用できる[ダッシュボードデザインの実践ガイドブック](https://www.digital.go.jp/policies/servicedesign/designsystem/dashboard/)を公開しています。
+デジタル庁は、行政や民間を問わず利用できる[ダッシュボードデザインの実践ガイドブック](https://www.digital.go.jp/resources/dashboard-guidebook)を公開しています。
 
 このガイドラインの素晴らしいところは、単なる見た目の美しさだけでなく、**「誰が、いつ、何のために見るか」**を重視した設計原則が体系化されている点です。特に以下の2つの類型アプローチが参考になりました。
 
