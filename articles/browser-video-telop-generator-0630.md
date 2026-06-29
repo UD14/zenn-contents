@@ -8,7 +8,7 @@ published: false
 
 ## きっかけ
 
-![完成したアプリの画面スクリーンショット](/images/browser-video-telop-generator/app_ui_mockup.png)
+![ブラウザ内で完結するUI](/images/browser-video-telop-generator/app_ui_mockup.png)
 *※ブラウザ内で動画アップロードからテロップ合成まで完結するUI*
 
 業務用の短い動画を、もっと手軽に作れないか——という相談がきっかけでした。
@@ -64,8 +64,8 @@ await ffmpeg.exec([
 
 ここでもサーバーを使わない方法を選びました。`Transformers.js`（Hugging Faceが提供するブラウザ向けの推論ライブラリ）を使い、Whisperの軽量モデル（`Xenova/whisper-tiny`）をブラウザ上で直接動かしています。
 
-![文字起こし処理中のスクリーンショット](/images/browser-video-telop-generator/transcription_progress.png)
-*※モデルのダウンロード進捗や解析状況がリアルタイムに表示される*
+![文字起こし機能のUI](/images/browser-video-telop-generator/transcription_progress.png)
+*※テキストエリアで自由に修正して動画に焼き付けられる*
 
 ```typescript
 const { pipeline } = await import('@huggingface/transformers');
@@ -83,9 +83,6 @@ const output = await transcriber(audioData, {
 精度は正直に言って、高くありません。`whisper-tiny` はWhisperモデルの中で最も小さいものであり、日本語の認識精度は「だいたい合ってるけど、ところどころ怪しい」という水準です。
 
 ただ、今回の用途ではそれで十分でした。文字起こしの結果はいったんテキストエリアに表示され、担当者がその場で手直しできるようにしています。「完璧な自動化」ではなく「8割をAIが埋めて、残り2割を人間が直す」という半自動の設計にしたことで、実用上の問題はほとんどなくなりました。
-
-![完成した動画のプレビューとダウンロードボタンのスクショ](/images/browser-video-telop-generator/video_preview.png)
-*※手直ししたテキストが黒帯の上に白文字で合成される*
 
 ## 技術構成のまとめ
 
