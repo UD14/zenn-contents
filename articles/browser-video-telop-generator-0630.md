@@ -8,6 +8,9 @@ published: false
 
 ## きっかけ
 
+![完成したアプリの画面スクリーンショットが入る予定](https://placehold.co/800x450/e2e8f0/475569?text=UI+Screenshot)
+*※ブラウザ内で動画アップロードからテロップ合成まで完結するUI*
+
 業務用の短い動画を、もっと手軽に作れないか——という相談がきっかけでした。
 
 「1〜2分の動画で、型は5種類くらい。企業の人が撮ってアップするだけで、ある程度のクオリティになるもの。凝った編集は要らない。シンプルなテロップが入ればいい。」
@@ -61,6 +64,9 @@ await ffmpeg.exec([
 
 ここでもサーバーを使わない方法を選びました。`Transformers.js`（Hugging Faceが提供するブラウザ向けの推論ライブラリ）を使い、Whisperの軽量モデル（`Xenova/whisper-tiny`）をブラウザ上で直接動かしています。
 
+![文字起こし処理中のスクリーンショットが入る予定](https://placehold.co/800x300/e2e8f0/475569?text=Transcription+Progress+Screenshot)
+*※モデルのダウンロード進捗や解析状況がリアルタイムに表示される*
+
 ```typescript
 const { pipeline } = await import('@huggingface/transformers');
 const transcriber = await pipeline(
@@ -78,6 +84,8 @@ const output = await transcriber(audioData, {
 
 ただ、今回の用途ではそれで十分でした。文字起こしの結果はいったんテキストエリアに表示され、担当者がその場で手直しできるようにしています。「完璧な自動化」ではなく「8割をAIが埋めて、残り2割を人間が直す」という半自動の設計にしたことで、実用上の問題はほとんどなくなりました。
 
+![完成した動画のプレビューとダウンロードボタンのスクショが入る予定](https://placehold.co/800x450/e2e8f0/475569?text=Video+Preview+Screenshot)
+*※手直ししたテキストが黒帯の上に白文字で合成される*
 
 ## 技術構成のまとめ
 
